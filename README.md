@@ -1,6 +1,6 @@
-# MacOS LanguageMatching应用开发
+# MacOS LanguageMatching工具类应用开发(国际化)
 
-说明：工具类MacOS App,是自动把Excel中的多国语言拷贝到工程文件中，提高工作效率。
+说明：一款工具类MacOS应用,是自动把Excel中的多国语言拷贝到工程文件中，提高工作效率。
 
 开发过程简单梳理，分为三步
 1、解析选定的工程路径，填充字典resourceUrlMark（key是lproj文件实际路径，value是Excel表格中多语言标识key）
