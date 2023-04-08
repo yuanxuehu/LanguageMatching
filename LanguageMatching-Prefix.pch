@@ -1,0 +1,24 @@
+//
+//  LanguageMatching-Prefix.pch
+//  LanguageMatching
+//
+//  Created by yuanxuehu on 2019/4/11.
+//  Copyright © 2019年 yuanxuehu. All rights reserved.
+//
+
+#ifndef LanguageMatching_Prefix_pch
+#define LanguageMatching_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#endif
+
+#endif /* LanguageMatching_Prefix_pch */

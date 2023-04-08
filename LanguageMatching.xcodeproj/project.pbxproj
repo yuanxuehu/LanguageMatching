@@ -1,0 +1,998 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10F6D59554AA2964AEE84C35 /* libPods-LanguageMatching.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8A49BFE50CBE230362EDCF /* libPods-LanguageMatching.a */; };
+		739DBEC0225F239700AD0576 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 739DBEBF225F239700AD0576 /* AppDelegate.m */; };
+		739DBEC3225F239700AD0576 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 739DBEC2225F239700AD0576 /* ViewController.m */; };
+		739DBEC5225F239E00AD0576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 739DBEC4225F239E00AD0576 /* Assets.xcassets */; };
+		739DBEC8225F239E00AD0576 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739DBEC6225F239E00AD0576 /* Main.storyboard */; };
+		739DBECB225F239E00AD0576 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 739DBECA225F239E00AD0576 /* main.m */; };
+		739DBED6225F239F00AD0576 /* LanguageMatchingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 739DBED5225F239F00AD0576 /* LanguageMatchingTests.m */; };
+		739DBEE1225F239F00AD0576 /* LanguageMatchingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 739DBEE0225F239F00AD0576 /* LanguageMatchingUITests.m */; };
+		739DBF4A225F574E00AD0576 /* CSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 739DBEF1225F574E00AD0576 /* CSVParser.m */; };
+		739DBF4B225F574E00AD0576 /* LAWExcelTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 739DBEF3225F574E00AD0576 /* LAWExcelTool.m */; };
+		739DBF4C225F574E00AD0576 /* main11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 739DBEF8225F574E00AD0576 /* main11.cpp */; };
+		739DBF4D225F574E00AD0576 /* XlsReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 739DBEF9225F574E00AD0576 /* XlsReader.cpp */; };
+		739DBF4E225F574E00AD0576 /* DHcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 739DBEFE225F574E00AD0576 /* DHcell.m */; };
+		739DBF4F225F574E00AD0576 /* DHxlsReaderIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF01225F574E00AD0576 /* DHxlsReaderIOS.m */; };
+		739DBF50225F574E00AD0576 /* getopt.c in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF0B225F574E00AD0576 /* getopt.c */; };
+		739DBF51225F574E00AD0576 /* ole.c in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF0C225F574E00AD0576 /* ole.c */; };
+		739DBF52225F574E00AD0576 /* xls.c in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF0D225F574E00AD0576 /* xls.c */; };
+		739DBF53225F574E00AD0576 /* xls2csv.c in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF0E225F574E00AD0576 /* xls2csv.c */; };
+		739DBF54225F574E00AD0576 /* xlstool.c in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF0F225F574E00AD0576 /* xlstool.c */; };
+		739DBF55225F574E00AD0576 /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF15225F574E00AD0576 /* aescrypt.c */; };
+		739DBF56225F574E00AD0576 /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF16225F574E00AD0576 /* aeskey.c */; };
+		739DBF57225F574E00AD0576 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF18225F574E00AD0576 /* aestab.c */; };
+		739DBF58225F574E00AD0576 /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF1C225F574E00AD0576 /* entropy.c */; };
+		739DBF59225F574E00AD0576 /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF1E225F574E00AD0576 /* fileenc.c */; };
+		739DBF5A225F574E00AD0576 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF20225F574E00AD0576 /* hmac.c */; };
+		739DBF5B225F574E00AD0576 /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF22225F574E00AD0576 /* prng.c */; };
+		739DBF5C225F574E00AD0576 /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF24225F574E00AD0576 /* pwd2key.c */; };
+		739DBF5D225F574E00AD0576 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF26225F574E00AD0576 /* sha1.c */; };
+		739DBF5E225F574E00AD0576 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF2B225F574E00AD0576 /* ioapi.c */; };
+		739DBF5F225F574E00AD0576 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF2D225F574E00AD0576 /* mztools.c */; };
+		739DBF60225F574E00AD0576 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF2F225F574E00AD0576 /* unzip.c */; };
+		739DBF61225F574E00AD0576 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF31225F574E00AD0576 /* zip.c */; };
+		739DBF62225F574E00AD0576 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF34225F574E00AD0576 /* SSZipArchive.m */; };
+		739DBF63225F574E00AD0576 /* ZContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF39225F574E00AD0576 /* ZContent.m */; };
+		739DBF64225F574E00AD0576 /* ZSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF3C225F574E00AD0576 /* ZSheet.m */; };
+		739DBF65225F574E00AD0576 /* ZSheetCol.m in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF3E225F574E00AD0576 /* ZSheetCol.m */; };
+		739DBF66225F574E00AD0576 /* ZBaseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF40225F574E00AD0576 /* ZBaseParser.m */; };
+		739DBF67225F574E00AD0576 /* ZContentParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF42225F574E00AD0576 /* ZContentParser.m */; };
+		739DBF68225F574E00AD0576 /* ZSheetParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF44225F574E00AD0576 /* ZSheetParser.m */; };
+		739DBF69225F574E00AD0576 /* ZWorkbookParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF46225F574E00AD0576 /* ZWorkbookParser.m */; };
+		739DBF6A225F574E00AD0576 /* ZXLSXParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF48225F574E00AD0576 /* ZXLSXParser.m */; };
+		739DBF6B225F574E00AD0576 /* ZXLSXParsers注解.m in Sources */ = {isa = PBXBuildFile; fileRef = 739DBF49225F574E00AD0576 /* ZXLSXParsers注解.m */; };
+		739DBF6E225F578900AD0576 /* libiconv.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 739DBF6D225F578900AD0576 /* libiconv.2.tbd */; };
+		739DBF70225F579300AD0576 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 739DBF6F225F579300AD0576 /* libz.tbd */; };
+		739DBF72225F580500AD0576 /* libiconv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 739DBF71225F580500AD0576 /* libiconv.2.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		739DBED2225F239F00AD0576 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 739DBEB3225F239600AD0576 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 739DBEBA225F239600AD0576;
+			remoteInfo = LanguageMatching;
+		};
+		739DBEDD225F239F00AD0576 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 739DBEB3225F239600AD0576 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 739DBEBA225F239600AD0576;
+			remoteInfo = LanguageMatching;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2863E286130F48F00D95AF66 /* Pods-LanguageMatching.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LanguageMatching.release.xcconfig"; path = "Target Support Files/Pods-LanguageMatching/Pods-LanguageMatching.release.xcconfig"; sourceTree = "<group>"; };
+		5C8A49BFE50CBE230362EDCF /* libPods-LanguageMatching.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LanguageMatching.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68FAA8910A462C32FB76414E /* Pods-LanguageMatching.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LanguageMatching.debug.xcconfig"; path = "Target Support Files/Pods-LanguageMatching/Pods-LanguageMatching.debug.xcconfig"; sourceTree = "<group>"; };
+		739DBEBB225F239700AD0576 /* LanguageMatching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LanguageMatching.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		739DBEBE225F239700AD0576 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		739DBEBF225F239700AD0576 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		739DBEC1225F239700AD0576 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		739DBEC2225F239700AD0576 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		739DBEC4225F239E00AD0576 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		739DBEC7225F239E00AD0576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		739DBEC9225F239E00AD0576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		739DBECA225F239E00AD0576 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		739DBECC225F239E00AD0576 /* LanguageMatching.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LanguageMatching.entitlements; sourceTree = "<group>"; };
+		739DBED1225F239F00AD0576 /* LanguageMatchingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LanguageMatchingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		739DBED5225F239F00AD0576 /* LanguageMatchingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageMatchingTests.m; sourceTree = "<group>"; };
+		739DBED7225F239F00AD0576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		739DBEDC225F239F00AD0576 /* LanguageMatchingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LanguageMatchingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		739DBEE0225F239F00AD0576 /* LanguageMatchingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageMatchingUITests.m; sourceTree = "<group>"; };
+		739DBEE2225F239F00AD0576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		739DBEF0225F574E00AD0576 /* CSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVParser.h; sourceTree = "<group>"; };
+		739DBEF1225F574E00AD0576 /* CSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVParser.m; sourceTree = "<group>"; };
+		739DBEF2225F574E00AD0576 /* LAWExcelTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAWExcelTool.h; sourceTree = "<group>"; };
+		739DBEF3225F574E00AD0576 /* LAWExcelTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAWExcelTool.m; sourceTree = "<group>"; };
+		739DBEF6225F574E00AD0576 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		739DBEF8225F574E00AD0576 /* main11.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main11.cpp; sourceTree = "<group>"; };
+		739DBEF9225F574E00AD0576 /* XlsReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XlsReader.cpp; sourceTree = "<group>"; };
+		739DBEFA225F574E00AD0576 /* XlsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XlsReader.h; sourceTree = "<group>"; };
+		739DBEFC225F574E00AD0576 /* DHcell-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DHcell-Private.h"; sourceTree = "<group>"; };
+		739DBEFD225F574E00AD0576 /* DHcell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHcell.h; sourceTree = "<group>"; };
+		739DBEFE225F574E00AD0576 /* DHcell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHcell.m; sourceTree = "<group>"; };
+		739DBEFF225F574E00AD0576 /* DHxlsReaderIOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DHxlsReaderIOS-Prefix.pch"; sourceTree = "<group>"; };
+		739DBF00225F574E00AD0576 /* DHxlsReaderIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHxlsReaderIOS.h; sourceTree = "<group>"; };
+		739DBF01225F574E00AD0576 /* DHxlsReaderIOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHxlsReaderIOS.m; sourceTree = "<group>"; };
+		739DBF03225F574E00AD0576 /* brdb.c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brdb.c.h; sourceTree = "<group>"; };
+		739DBF04225F574E00AD0576 /* brdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brdb.h; sourceTree = "<group>"; };
+		739DBF05225F574E00AD0576 /* ole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ole.h; sourceTree = "<group>"; };
+		739DBF06225F574E00AD0576 /* xls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xls.h; sourceTree = "<group>"; };
+		739DBF07225F574E00AD0576 /* xlsstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlsstruct.h; sourceTree = "<group>"; };
+		739DBF08225F574E00AD0576 /* xlstool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlstool.h; sourceTree = "<group>"; };
+		739DBF09225F574E00AD0576 /* xlstypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlstypes.h; sourceTree = "<group>"; };
+		739DBF0B225F574E00AD0576 /* getopt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getopt.c; sourceTree = "<group>"; };
+		739DBF0C225F574E00AD0576 /* ole.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ole.c; sourceTree = "<group>"; };
+		739DBF0D225F574E00AD0576 /* xls.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xls.c; sourceTree = "<group>"; };
+		739DBF0E225F574E00AD0576 /* xls2csv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xls2csv.c; sourceTree = "<group>"; };
+		739DBF0F225F574E00AD0576 /* xlstool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xlstool.c; sourceTree = "<group>"; };
+		739DBF13225F574E00AD0576 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		739DBF14225F574E00AD0576 /* aes_via_ace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes_via_ace.h; sourceTree = "<group>"; };
+		739DBF15225F574E00AD0576 /* aescrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aescrypt.c; sourceTree = "<group>"; };
+		739DBF16225F574E00AD0576 /* aeskey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aeskey.c; sourceTree = "<group>"; };
+		739DBF17225F574E00AD0576 /* aesopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aesopt.h; sourceTree = "<group>"; };
+		739DBF18225F574E00AD0576 /* aestab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aestab.c; sourceTree = "<group>"; };
+		739DBF19225F574E00AD0576 /* aestab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aestab.h; sourceTree = "<group>"; };
+		739DBF1A225F574E00AD0576 /* brg_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_endian.h; sourceTree = "<group>"; };
+		739DBF1B225F574E00AD0576 /* brg_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_types.h; sourceTree = "<group>"; };
+		739DBF1C225F574E00AD0576 /* entropy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = entropy.c; sourceTree = "<group>"; };
+		739DBF1D225F574E00AD0576 /* entropy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entropy.h; sourceTree = "<group>"; };
+		739DBF1E225F574E00AD0576 /* fileenc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fileenc.c; sourceTree = "<group>"; };
+		739DBF1F225F574E00AD0576 /* fileenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileenc.h; sourceTree = "<group>"; };
+		739DBF20225F574E00AD0576 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		739DBF21225F574E00AD0576 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		739DBF22225F574E00AD0576 /* prng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prng.c; sourceTree = "<group>"; };
+		739DBF23225F574E00AD0576 /* prng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prng.h; sourceTree = "<group>"; };
+		739DBF24225F574E00AD0576 /* pwd2key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwd2key.c; sourceTree = "<group>"; };
+		739DBF25225F574E00AD0576 /* pwd2key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pwd2key.h; sourceTree = "<group>"; };
+		739DBF26225F574E00AD0576 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		739DBF27225F574E00AD0576 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		739DBF28225F574E00AD0576 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		739DBF2A225F574E00AD0576 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		739DBF2B225F574E00AD0576 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		739DBF2C225F574E00AD0576 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		739DBF2D225F574E00AD0576 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		739DBF2E225F574E00AD0576 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		739DBF2F225F574E00AD0576 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		739DBF30225F574E00AD0576 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		739DBF31225F574E00AD0576 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		739DBF32225F574E00AD0576 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		739DBF33225F574E00AD0576 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		739DBF34225F574E00AD0576 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		739DBF36225F574E00AD0576 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		739DBF38225F574E00AD0576 /* ZContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZContent.h; sourceTree = "<group>"; };
+		739DBF39225F574E00AD0576 /* ZContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZContent.m; sourceTree = "<group>"; };
+		739DBF3A225F574E00AD0576 /* ZPaserProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPaserProtocol.h; sourceTree = "<group>"; };
+		739DBF3B225F574E00AD0576 /* ZSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSheet.h; sourceTree = "<group>"; };
+		739DBF3C225F574E00AD0576 /* ZSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSheet.m; sourceTree = "<group>"; };
+		739DBF3D225F574E00AD0576 /* ZSheetCol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSheetCol.h; sourceTree = "<group>"; };
+		739DBF3E225F574E00AD0576 /* ZSheetCol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSheetCol.m; sourceTree = "<group>"; };
+		739DBF3F225F574E00AD0576 /* ZBaseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBaseParser.h; sourceTree = "<group>"; };
+		739DBF40225F574E00AD0576 /* ZBaseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBaseParser.m; sourceTree = "<group>"; };
+		739DBF41225F574E00AD0576 /* ZContentParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZContentParser.h; sourceTree = "<group>"; };
+		739DBF42225F574E00AD0576 /* ZContentParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZContentParser.m; sourceTree = "<group>"; };
+		739DBF43225F574E00AD0576 /* ZSheetParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSheetParser.h; sourceTree = "<group>"; };
+		739DBF44225F574E00AD0576 /* ZSheetParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSheetParser.m; sourceTree = "<group>"; };
+		739DBF45225F574E00AD0576 /* ZWorkbookParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWorkbookParser.h; sourceTree = "<group>"; };
+		739DBF46225F574E00AD0576 /* ZWorkbookParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWorkbookParser.m; sourceTree = "<group>"; };
+		739DBF47225F574E00AD0576 /* ZXLSXParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXLSXParser.h; sourceTree = "<group>"; };
+		739DBF48225F574E00AD0576 /* ZXLSXParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXLSXParser.m; sourceTree = "<group>"; };
+		739DBF49225F574E00AD0576 /* ZXLSXParsers注解.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ZXLSXParsers注解.m"; sourceTree = "<group>"; };
+		739DBF6D225F578900AD0576 /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
+		739DBF6F225F579300AD0576 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		739DBF71225F580500AD0576 /* libiconv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.dylib; path = ../../../../../usr/lib/libiconv.2.dylib; sourceTree = "<group>"; };
+		739DBF73225F58CA00AD0576 /* LanguageMatching-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LanguageMatching-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		739DBEB8225F239600AD0576 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739DBF72225F580500AD0576 /* libiconv.2.dylib in Frameworks */,
+				739DBF70225F579300AD0576 /* libz.tbd in Frameworks */,
+				739DBF6E225F578900AD0576 /* libiconv.2.tbd in Frameworks */,
+				10F6D59554AA2964AEE84C35 /* libPods-LanguageMatching.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739DBECE225F239F00AD0576 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739DBED9225F239F00AD0576 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		739DBEB2225F239600AD0576 = {
+			isa = PBXGroup;
+			children = (
+				739DBF73225F58CA00AD0576 /* LanguageMatching-Prefix.pch */,
+				739DBEBD225F239700AD0576 /* LanguageMatching */,
+				739DBED4225F239F00AD0576 /* LanguageMatchingTests */,
+				739DBEDF225F239F00AD0576 /* LanguageMatchingUITests */,
+				739DBEBC225F239700AD0576 /* Products */,
+				739DBF6C225F578900AD0576 /* Frameworks */,
+				C3652E31818727769E84355A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		739DBEBC225F239700AD0576 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				739DBEBB225F239700AD0576 /* LanguageMatching.app */,
+				739DBED1225F239F00AD0576 /* LanguageMatchingTests.xctest */,
+				739DBEDC225F239F00AD0576 /* LanguageMatchingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		739DBEBD225F239700AD0576 /* LanguageMatching */ = {
+			isa = PBXGroup;
+			children = (
+				739DBEEE225F574E00AD0576 /* ExcelParser */,
+				739DBEBE225F239700AD0576 /* AppDelegate.h */,
+				739DBEBF225F239700AD0576 /* AppDelegate.m */,
+				739DBEC1225F239700AD0576 /* ViewController.h */,
+				739DBEC2225F239700AD0576 /* ViewController.m */,
+				739DBEC4225F239E00AD0576 /* Assets.xcassets */,
+				739DBEC6225F239E00AD0576 /* Main.storyboard */,
+				739DBEC9225F239E00AD0576 /* Info.plist */,
+				739DBECA225F239E00AD0576 /* main.m */,
+				739DBECC225F239E00AD0576 /* LanguageMatching.entitlements */,
+			);
+			path = LanguageMatching;
+			sourceTree = "<group>";
+		};
+		739DBED4225F239F00AD0576 /* LanguageMatchingTests */ = {
+			isa = PBXGroup;
+			children = (
+				739DBED5225F239F00AD0576 /* LanguageMatchingTests.m */,
+				739DBED7225F239F00AD0576 /* Info.plist */,
+			);
+			path = LanguageMatchingTests;
+			sourceTree = "<group>";
+		};
+		739DBEDF225F239F00AD0576 /* LanguageMatchingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				739DBEE0225F239F00AD0576 /* LanguageMatchingUITests.m */,
+				739DBEE2225F239F00AD0576 /* Info.plist */,
+			);
+			path = LanguageMatchingUITests;
+			sourceTree = "<group>";
+		};
+		739DBEEE225F574E00AD0576 /* ExcelParser */ = {
+			isa = PBXGroup;
+			children = (
+				739DBEEF225F574E00AD0576 /* CSV */,
+				739DBEF2225F574E00AD0576 /* LAWExcelTool.h */,
+				739DBEF3225F574E00AD0576 /* LAWExcelTool.m */,
+				739DBEF4225F574E00AD0576 /* XLS */,
+				739DBF10225F574E00AD0576 /* XLSX */,
+			);
+			path = ExcelParser;
+			sourceTree = "<group>";
+		};
+		739DBEEF225F574E00AD0576 /* CSV */ = {
+			isa = PBXGroup;
+			children = (
+				739DBEF0225F574E00AD0576 /* CSVParser.h */,
+				739DBEF1225F574E00AD0576 /* CSVParser.m */,
+			);
+			path = CSV;
+			sourceTree = "<group>";
+		};
+		739DBEF4225F574E00AD0576 /* XLS */ = {
+			isa = PBXGroup;
+			children = (
+				739DBEF5225F574E00AD0576 /* DHxlsReader */,
+			);
+			path = XLS;
+			sourceTree = "<group>";
+		};
+		739DBEF5225F574E00AD0576 /* DHxlsReader */ = {
+			isa = PBXGroup;
+			children = (
+				739DBEF6225F574E00AD0576 /* config.h */,
+				739DBEF7225F574E00AD0576 /* cplusplus */,
+				739DBEFB225F574E00AD0576 /* DHxlsReaderIOS */,
+				739DBF02225F574E00AD0576 /* libxls */,
+				739DBF0A225F574E00AD0576 /* src */,
+			);
+			path = DHxlsReader;
+			sourceTree = "<group>";
+		};
+		739DBEF7225F574E00AD0576 /* cplusplus */ = {
+			isa = PBXGroup;
+			children = (
+				739DBEF8225F574E00AD0576 /* main11.cpp */,
+				739DBEF9225F574E00AD0576 /* XlsReader.cpp */,
+				739DBEFA225F574E00AD0576 /* XlsReader.h */,
+			);
+			path = cplusplus;
+			sourceTree = "<group>";
+		};
+		739DBEFB225F574E00AD0576 /* DHxlsReaderIOS */ = {
+			isa = PBXGroup;
+			children = (
+				739DBEFC225F574E00AD0576 /* DHcell-Private.h */,
+				739DBF01225F574E00AD0576 /* DHxlsReaderIOS.m */,
+				739DBEFD225F574E00AD0576 /* DHcell.h */,
+				739DBEFE225F574E00AD0576 /* DHcell.m */,
+				739DBEFF225F574E00AD0576 /* DHxlsReaderIOS-Prefix.pch */,
+				739DBF00225F574E00AD0576 /* DHxlsReaderIOS.h */,
+			);
+			path = DHxlsReaderIOS;
+			sourceTree = "<group>";
+		};
+		739DBF02225F574E00AD0576 /* libxls */ = {
+			isa = PBXGroup;
+			children = (
+				739DBF03225F574E00AD0576 /* brdb.c.h */,
+				739DBF04225F574E00AD0576 /* brdb.h */,
+				739DBF05225F574E00AD0576 /* ole.h */,
+				739DBF06225F574E00AD0576 /* xls.h */,
+				739DBF07225F574E00AD0576 /* xlsstruct.h */,
+				739DBF08225F574E00AD0576 /* xlstool.h */,
+				739DBF09225F574E00AD0576 /* xlstypes.h */,
+			);
+			path = libxls;
+			sourceTree = "<group>";
+		};
+		739DBF0A225F574E00AD0576 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				739DBF0B225F574E00AD0576 /* getopt.c */,
+				739DBF0C225F574E00AD0576 /* ole.c */,
+				739DBF0D225F574E00AD0576 /* xls.c */,
+				739DBF0E225F574E00AD0576 /* xls2csv.c */,
+				739DBF0F225F574E00AD0576 /* xlstool.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		739DBF10225F574E00AD0576 /* XLSX */ = {
+			isa = PBXGroup;
+			children = (
+				739DBF11225F574E00AD0576 /* SSZipArchive */,
+				739DBF35225F574E00AD0576 /* xmlParser */,
+				739DBF49225F574E00AD0576 /* ZXLSXParsers注解.m */,
+			);
+			path = XLSX;
+			sourceTree = "<group>";
+		};
+		739DBF11225F574E00AD0576 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				739DBF12225F574E00AD0576 /* aes */,
+				739DBF28225F574E00AD0576 /* Common.h */,
+				739DBF29225F574E00AD0576 /* minizip */,
+				739DBF33225F574E00AD0576 /* SSZipArchive.h */,
+				739DBF34225F574E00AD0576 /* SSZipArchive.m */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		739DBF12225F574E00AD0576 /* aes */ = {
+			isa = PBXGroup;
+			children = (
+				739DBF13225F574E00AD0576 /* aes.h */,
+				739DBF14225F574E00AD0576 /* aes_via_ace.h */,
+				739DBF15225F574E00AD0576 /* aescrypt.c */,
+				739DBF16225F574E00AD0576 /* aeskey.c */,
+				739DBF17225F574E00AD0576 /* aesopt.h */,
+				739DBF18225F574E00AD0576 /* aestab.c */,
+				739DBF19225F574E00AD0576 /* aestab.h */,
+				739DBF1A225F574E00AD0576 /* brg_endian.h */,
+				739DBF1B225F574E00AD0576 /* brg_types.h */,
+				739DBF1C225F574E00AD0576 /* entropy.c */,
+				739DBF1D225F574E00AD0576 /* entropy.h */,
+				739DBF1E225F574E00AD0576 /* fileenc.c */,
+				739DBF1F225F574E00AD0576 /* fileenc.h */,
+				739DBF20225F574E00AD0576 /* hmac.c */,
+				739DBF21225F574E00AD0576 /* hmac.h */,
+				739DBF22225F574E00AD0576 /* prng.c */,
+				739DBF23225F574E00AD0576 /* prng.h */,
+				739DBF24225F574E00AD0576 /* pwd2key.c */,
+				739DBF25225F574E00AD0576 /* pwd2key.h */,
+				739DBF26225F574E00AD0576 /* sha1.c */,
+				739DBF27225F574E00AD0576 /* sha1.h */,
+			);
+			path = aes;
+			sourceTree = "<group>";
+		};
+		739DBF29225F574E00AD0576 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				739DBF2A225F574E00AD0576 /* crypt.h */,
+				739DBF2B225F574E00AD0576 /* ioapi.c */,
+				739DBF2C225F574E00AD0576 /* ioapi.h */,
+				739DBF2D225F574E00AD0576 /* mztools.c */,
+				739DBF2E225F574E00AD0576 /* mztools.h */,
+				739DBF2F225F574E00AD0576 /* unzip.c */,
+				739DBF30225F574E00AD0576 /* unzip.h */,
+				739DBF31225F574E00AD0576 /* zip.c */,
+				739DBF32225F574E00AD0576 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		739DBF35225F574E00AD0576 /* xmlParser */ = {
+			isa = PBXGroup;
+			children = (
+				739DBF36225F574E00AD0576 /* config.h */,
+				739DBF37225F574E00AD0576 /* models */,
+				739DBF3F225F574E00AD0576 /* ZBaseParser.h */,
+				739DBF40225F574E00AD0576 /* ZBaseParser.m */,
+				739DBF41225F574E00AD0576 /* ZContentParser.h */,
+				739DBF42225F574E00AD0576 /* ZContentParser.m */,
+				739DBF43225F574E00AD0576 /* ZSheetParser.h */,
+				739DBF44225F574E00AD0576 /* ZSheetParser.m */,
+				739DBF45225F574E00AD0576 /* ZWorkbookParser.h */,
+				739DBF46225F574E00AD0576 /* ZWorkbookParser.m */,
+				739DBF47225F574E00AD0576 /* ZXLSXParser.h */,
+				739DBF48225F574E00AD0576 /* ZXLSXParser.m */,
+			);
+			path = xmlParser;
+			sourceTree = "<group>";
+		};
+		739DBF37225F574E00AD0576 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				739DBF38225F574E00AD0576 /* ZContent.h */,
+				739DBF39225F574E00AD0576 /* ZContent.m */,
+				739DBF3A225F574E00AD0576 /* ZPaserProtocol.h */,
+				739DBF3B225F574E00AD0576 /* ZSheet.h */,
+				739DBF3C225F574E00AD0576 /* ZSheet.m */,
+				739DBF3D225F574E00AD0576 /* ZSheetCol.h */,
+				739DBF3E225F574E00AD0576 /* ZSheetCol.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		739DBF6C225F578900AD0576 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				739DBF71225F580500AD0576 /* libiconv.2.dylib */,
+				739DBF6F225F579300AD0576 /* libz.tbd */,
+				739DBF6D225F578900AD0576 /* libiconv.2.tbd */,
+				5C8A49BFE50CBE230362EDCF /* libPods-LanguageMatching.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3652E31818727769E84355A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68FAA8910A462C32FB76414E /* Pods-LanguageMatching.debug.xcconfig */,
+				2863E286130F48F00D95AF66 /* Pods-LanguageMatching.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		739DBEBA225F239600AD0576 /* LanguageMatching */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 739DBEE5225F239F00AD0576 /* Build configuration list for PBXNativeTarget "LanguageMatching" */;
+			buildPhases = (
+				7D67BBC73583E38013DA49D9 /* [CP] Check Pods Manifest.lock */,
+				739DBEB7225F239600AD0576 /* Sources */,
+				739DBEB8225F239600AD0576 /* Frameworks */,
+				739DBEB9225F239600AD0576 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LanguageMatching;
+			productName = LanguageMatching;
+			productReference = 739DBEBB225F239700AD0576 /* LanguageMatching.app */;
+			productType = "com.apple.product-type.application";
+		};
+		739DBED0225F239F00AD0576 /* LanguageMatchingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 739DBEE8225F239F00AD0576 /* Build configuration list for PBXNativeTarget "LanguageMatchingTests" */;
+			buildPhases = (
+				739DBECD225F239F00AD0576 /* Sources */,
+				739DBECE225F239F00AD0576 /* Frameworks */,
+				739DBECF225F239F00AD0576 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				739DBED3225F239F00AD0576 /* PBXTargetDependency */,
+			);
+			name = LanguageMatchingTests;
+			productName = LanguageMatchingTests;
+			productReference = 739DBED1225F239F00AD0576 /* LanguageMatchingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		739DBEDB225F239F00AD0576 /* LanguageMatchingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 739DBEEB225F239F00AD0576 /* Build configuration list for PBXNativeTarget "LanguageMatchingUITests" */;
+			buildPhases = (
+				739DBED8225F239F00AD0576 /* Sources */,
+				739DBED9225F239F00AD0576 /* Frameworks */,
+				739DBEDA225F239F00AD0576 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				739DBEDE225F239F00AD0576 /* PBXTargetDependency */,
+			);
+			name = LanguageMatchingUITests;
+			productName = LanguageMatchingUITests;
+			productReference = 739DBEDC225F239F00AD0576 /* LanguageMatchingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		739DBEB3225F239600AD0576 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = lixianliang;
+				TargetAttributes = {
+					739DBEBA225F239600AD0576 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					739DBED0225F239F00AD0576 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 739DBEBA225F239600AD0576;
+					};
+					739DBEDB225F239F00AD0576 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 739DBEBA225F239600AD0576;
+					};
+				};
+			};
+			buildConfigurationList = 739DBEB6225F239600AD0576 /* Build configuration list for PBXProject "LanguageMatching" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 739DBEB2225F239600AD0576;
+			productRefGroup = 739DBEBC225F239700AD0576 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				739DBEBA225F239600AD0576 /* LanguageMatching */,
+				739DBED0225F239F00AD0576 /* LanguageMatchingTests */,
+				739DBEDB225F239F00AD0576 /* LanguageMatchingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		739DBEB9225F239600AD0576 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739DBEC5225F239E00AD0576 /* Assets.xcassets in Resources */,
+				739DBEC8225F239E00AD0576 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739DBECF225F239F00AD0576 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739DBEDA225F239F00AD0576 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D67BBC73583E38013DA49D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LanguageMatching-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		739DBEB7225F239600AD0576 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739DBF65225F574E00AD0576 /* ZSheetCol.m in Sources */,
+				739DBF63225F574E00AD0576 /* ZContent.m in Sources */,
+				739DBF5A225F574E00AD0576 /* hmac.c in Sources */,
+				739DBF67225F574E00AD0576 /* ZContentParser.m in Sources */,
+				739DBF51225F574E00AD0576 /* ole.c in Sources */,
+				739DBF59225F574E00AD0576 /* fileenc.c in Sources */,
+				739DBF50225F574E00AD0576 /* getopt.c in Sources */,
+				739DBF60225F574E00AD0576 /* unzip.c in Sources */,
+				739DBF4C225F574E00AD0576 /* main11.cpp in Sources */,
+				739DBF68225F574E00AD0576 /* ZSheetParser.m in Sources */,
+				739DBF54225F574E00AD0576 /* xlstool.c in Sources */,
+				739DBEC3225F239700AD0576 /* ViewController.m in Sources */,
+				739DBF66225F574E00AD0576 /* ZBaseParser.m in Sources */,
+				739DBF58225F574E00AD0576 /* entropy.c in Sources */,
+				739DBECB225F239E00AD0576 /* main.m in Sources */,
+				739DBF5F225F574E00AD0576 /* mztools.c in Sources */,
+				739DBEC0225F239700AD0576 /* AppDelegate.m in Sources */,
+				739DBF62225F574E00AD0576 /* SSZipArchive.m in Sources */,
+				739DBF6A225F574E00AD0576 /* ZXLSXParser.m in Sources */,
+				739DBF61225F574E00AD0576 /* zip.c in Sources */,
+				739DBF4B225F574E00AD0576 /* LAWExcelTool.m in Sources */,
+				739DBF57225F574E00AD0576 /* aestab.c in Sources */,
+				739DBF5C225F574E00AD0576 /* pwd2key.c in Sources */,
+				739DBF69225F574E00AD0576 /* ZWorkbookParser.m in Sources */,
+				739DBF5B225F574E00AD0576 /* prng.c in Sources */,
+				739DBF4A225F574E00AD0576 /* CSVParser.m in Sources */,
+				739DBF64225F574E00AD0576 /* ZSheet.m in Sources */,
+				739DBF4D225F574E00AD0576 /* XlsReader.cpp in Sources */,
+				739DBF52225F574E00AD0576 /* xls.c in Sources */,
+				739DBF56225F574E00AD0576 /* aeskey.c in Sources */,
+				739DBF5E225F574E00AD0576 /* ioapi.c in Sources */,
+				739DBF5D225F574E00AD0576 /* sha1.c in Sources */,
+				739DBF53225F574E00AD0576 /* xls2csv.c in Sources */,
+				739DBF4E225F574E00AD0576 /* DHcell.m in Sources */,
+				739DBF55225F574E00AD0576 /* aescrypt.c in Sources */,
+				739DBF6B225F574E00AD0576 /* ZXLSXParsers注解.m in Sources */,
+				739DBF4F225F574E00AD0576 /* DHxlsReaderIOS.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739DBECD225F239F00AD0576 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739DBED6225F239F00AD0576 /* LanguageMatchingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739DBED8225F239F00AD0576 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739DBEE1225F239F00AD0576 /* LanguageMatchingUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		739DBED3225F239F00AD0576 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 739DBEBA225F239600AD0576 /* LanguageMatching */;
+			targetProxy = 739DBED2225F239F00AD0576 /* PBXContainerItemProxy */;
+		};
+		739DBEDE225F239F00AD0576 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 739DBEBA225F239600AD0576 /* LanguageMatching */;
+			targetProxy = 739DBEDD225F239F00AD0576 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		739DBEC6225F239E00AD0576 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				739DBEC7225F239E00AD0576 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		739DBEE3225F239F00AD0576 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		739DBEE4225F239F00AD0576 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		739DBEE6225F239F00AD0576 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68FAA8910A462C32FB76414E /* Pods-LanguageMatching.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 6T2VWAK6CR;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/yuanxuehu/XcodeProjects/DemoProjects/LanguageMatching/LanguageMatching-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					DHxlsReaderIOS,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LanguageMatching/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuanxuehu.LanguageMatching;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		739DBEE7225F239F00AD0576 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2863E286130F48F00D95AF66 /* Pods-LanguageMatching.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 6T2VWAK6CR;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/yuanxuehu/XcodeProjects/DemoProjects/LanguageMatching/LanguageMatching-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					DHxlsReaderIOS,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LanguageMatching/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuanxuehu.LanguageMatching;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		739DBEE9225F239F00AD0576 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6T2VWAK6CR;
+				INFOPLIST_FILE = LanguageMatchingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuanxuehu.LanguageMatchingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LanguageMatching.app/Contents/MacOS/LanguageMatching";
+			};
+			name = Debug;
+		};
+		739DBEEA225F239F00AD0576 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6T2VWAK6CR;
+				INFOPLIST_FILE = LanguageMatchingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuanxuehu.LanguageMatchingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LanguageMatching.app/Contents/MacOS/LanguageMatching";
+			};
+			name = Release;
+		};
+		739DBEEC225F239F00AD0576 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6T2VWAK6CR;
+				INFOPLIST_FILE = LanguageMatchingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuanxuehu.LanguageMatchingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LanguageMatching;
+			};
+			name = Debug;
+		};
+		739DBEED225F239F00AD0576 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6T2VWAK6CR;
+				INFOPLIST_FILE = LanguageMatchingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuanxuehu.LanguageMatchingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LanguageMatching;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		739DBEB6225F239600AD0576 /* Build configuration list for PBXProject "LanguageMatching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739DBEE3225F239F00AD0576 /* Debug */,
+				739DBEE4225F239F00AD0576 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		739DBEE5225F239F00AD0576 /* Build configuration list for PBXNativeTarget "LanguageMatching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739DBEE6225F239F00AD0576 /* Debug */,
+				739DBEE7225F239F00AD0576 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		739DBEE8225F239F00AD0576 /* Build configuration list for PBXNativeTarget "LanguageMatchingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739DBEE9225F239F00AD0576 /* Debug */,
+				739DBEEA225F239F00AD0576 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		739DBEEB225F239F00AD0576 /* Build configuration list for PBXNativeTarget "LanguageMatchingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739DBEEC225F239F00AD0576 /* Debug */,
+				739DBEED225F239F00AD0576 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 739DBEB3225F239600AD0576 /* Project object */;
+}
